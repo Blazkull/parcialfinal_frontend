@@ -132,6 +132,8 @@ ol {
 
 header {
     height: var(--altura_menu);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .menu {
@@ -262,5 +264,6 @@ header {
     display: flex;
     justify-items: center;
     gap: 5%;
+    
    
 }
