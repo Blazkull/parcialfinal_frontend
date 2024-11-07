@@ -26,25 +26,8 @@
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-/* Fondo y Texto */
-body,main {
-    background-color: var(--color-fondo);
-    color: var(--color-texto-principal);
-    font-family: 'Poppins', sans-serif;
-    width: 90%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.container{
-    display: flex; /* Enable flexbox layout */
-    flex-direction: row;  /* Arrange elements horizontally */
-    width: 90%;  /* Maintain 90% width */
-    margin: 0 auto;  /* Center horizontally */
-    height: 90vh;
-   
-    
-}
+
 
 /*.space-grotesk-<uniquifier> {
     font-family: "Space Grotesk", sans-serif;
@@ -62,16 +45,34 @@ h6 {
     color: var(--color-texto-principal);
 }
 h1{
-    font-size: 55px;
+    font-size: 120px;
     font-style: bold;
+    line-height: 100px;
+    margin-bottom: 40px;
+    text-align:left;
+    
+}
+.resaltar{
+    font-size: 140px;
+    color: var(--subrayar);
+    font-weight: 700;
+    
 }
 
 p {
     color: var(--color-texto-secundario);
     font-size: 16px;
-    font-style: normal;
+    font-style:normal;
+   
 }
-
+.p-hero{
+    color: var(--color-texto-secundario);
+    font-size: 28px;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-weight: 300;
+    
+}
 /*header*/
 .logo {
     width: 70px;
@@ -92,15 +93,32 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.btn-whatsapp-hero{
+    display: inline-block;
+    background-color: #000000;
+    /* Color verde de WhatsApp */
+    color: var(--text-buttom);
+    /* Texto en blanco */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-.btn-whatsapp:hover {
-    background-color: #25D366;
+.btn-whatsapp:hover, .btn-whatsapp-hero:hover {
+    background-color: var(--subrayar);
     /* Color verde más oscuro al pasar el ratón */
+    color: black;
+    transform: scale(1.1);
+
 }
 .cta-banner:hover{
     background-color:var(--subrayar);
     color:black;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 a {
@@ -182,16 +200,67 @@ header {
     color: rgb(255, 255, 255);
 }
 
-.text-descrip,.img_hero
-
- {
-  width: 45%;  /* Set width for each element */
-  margin: 0 5%;  /* Add margin for spacing */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.img_hero2{
-    width:800px;
-    height: 80vh;
+.container > div:first-child {
+    width: 60%; /* Ajusta el tamaño para el texto */
+     /* Añade espacio entre el texto y la imagen */
 }
 
+.container > div:last-child {
+    width: 30%; /* Ajusta el tamaño para la imagen */
+    display: flex;
+    justify-content: flex-start; /* Mueve la imagen más a la izquierda */
+    height: 90vh;
+    
+}
+.img_hero {
+    animation: slideInFromRight 1s ease forwards;
+}
 
+.text-content {
+    animation: slideInFromTop 1s ease forwards;
+    
+}
+@keyframes slideInFromRight {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* slider partners */
+.parnet{
+    width: 90%;
+    margin: 0 auto;
+    
+   margin-bottom: 100px;
+  
+}
+.parnet-child{
+    display: flex;
+    justify-items: center;
+    gap: 5%;
+   
+}
