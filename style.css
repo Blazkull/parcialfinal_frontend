@@ -49,7 +49,7 @@ h1{
     font-style: bold;
     line-height: 100px;
     margin-bottom: 40px;
-    text-align:left;
+    text-align:start;
     
 }
 .resaltar{
@@ -213,13 +213,15 @@ header {
 .container > div:first-child {
     width: 60%; /* Ajusta el tamaño para el texto */
      /* Añade espacio entre el texto y la imagen */
+    
 }
 
 .container > div:last-child {
-    width: 30%; /* Ajusta el tamaño para la imagen */
+    width: 40%; /* Ajusta el tamaño para la imagen */
     display: flex;
     justify-content: flex-start; /* Mueve la imagen más a la izquierda */
     height: 90vh;
+    margin-left:30%;
     
 }
 .img_hero {
