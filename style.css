@@ -44,42 +44,47 @@ h5,
 h6 {
     color: var(--color-texto-principal);
 }
-h1{
+
+h1 {
     font-size: 120px;
     font-style: bold;
     line-height: 100px;
     margin-bottom: 40px;
-    text-align:start;
-    
+    text-align: start;
+
 }
-.resaltar{
+
+.resaltar {
     font-size: 140px;
     color: var(--subrayar);
     font-weight: 700;
-    
+
 }
 
 p {
     color: var(--color-texto-secundario);
     font-size: 16px;
-    font-style:normal;
-   
+    font-style: normal;
+
 }
-.p-hero{
+
+.p-hero {
     color: var(--color-texto-secundario);
     font-size: 28px;
     font-style: normal;
     margin-bottom: 40px;
     font-weight: 300;
-    
+
 }
+
 /*header*/
 .logo {
     width: 70px;
     height: 70px;
 }
 
-.btn-whatsapp, .cta-banner {
+.btn-whatsapp,
+.cta-banner {
     display: inline-block;
     background-color: #000000;
     /* Color verde de WhatsApp */
@@ -93,7 +98,8 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.btn-whatsapp-hero{
+
+.btn-whatsapp-hero {
     display: inline-block;
     background-color: #000000;
     /* Color verde de WhatsApp */
@@ -108,16 +114,18 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.btn-whatsapp:hover, .btn-whatsapp-hero:hover {
+.btn-whatsapp:hover,
+.btn-whatsapp-hero:hover {
     background-color: var(--subrayar);
     /* Color verde más oscuro al pasar el ratón */
     color: black;
     transform: scale(1.1);
 
 }
-.cta-banner:hover{
-    background-color:var(--subrayar);
-    color:black;
+
+.cta-banner:hover {
+    background-color: var(--subrayar);
+    color: black;
     transform: scale(1.1);
 }
 
@@ -210,33 +218,39 @@ header {
     margin-bottom: 100px;
 }
 
-.container > div:first-child {
-    width: 60%; /* Ajusta el tamaño para el texto */
-     /* Añade espacio entre el texto y la imagen */
-    
+.container>div:first-child {
+    width: 60%;
+    /* Ajusta el tamaño para el texto */
+    /* Añade espacio entre el texto y la imagen */
+
 }
 
-.container > div:last-child {
-    width: 40%; /* Ajusta el tamaño para la imagen */
+.container>div:last-child {
+    width: 40%;
+    /* Ajusta el tamaño para la imagen */
     display: flex;
-    justify-content: flex-start; /* Mueve la imagen más a la izquierda */
+    justify-content: flex-start;
+    /* Mueve la imagen más a la izquierda */
     height: 90vh;
-    margin-left:30%;
-    
+    margin-left: 20%;
+
 }
+
 .img_hero {
     animation: slideInFromRight 1s ease forwards;
 }
 
 .text-content {
     animation: slideInFromTop 1s ease forwards;
-    
+
 }
+
 @keyframes slideInFromRight {
     from {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -248,6 +262,7 @@ header {
         transform: translateY(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -255,17 +270,120 @@ header {
 }
 
 /* slider partners1 */
-.parnet{
+.parnet {
     width: 90%;
     margin: 0 auto;
-    
-   margin-bottom: 100px;
-  
+    margin-bottom: 100px;
+
 }
-.parnet-child{
+
+.parnet-child {
     display: flex;
     justify-items: center;
-    gap: 5%;
-    
-   
+    gap: 20px;
+
+
+}
+
+.parnet-child:hover {
+    color: red;
+}
+
+.carts_services{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+/*services*/
+.servicios {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicios h2 {
+    color: #3A8DFF; /* Color de título principal */
+    margin-bottom: 10px;
+}
+
+.servicios p {
+    color: #676767; /* Color del texto de descripción */
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    text-align: left;
+    position: relative;
+}
+
+.tarjeta-negra {
+    background-color: #2A2A2A;
+    color: #ffffff;
+}
+
+.tarjeta h3 {
+    font-size: 18px;
+    color: #3A8DFF;
+    margin-bottom: 15px;
+}
+
+.tarjeta-negra h3 {
+    color: #FFC857;
+}
+
+.icono {
+    margin-bottom: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icono img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+/* Estilos del enlace "Learn more" */
+.learn-more {
+    color: #3A8DFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.learn-more:hover {
+    color: #316FC1; /* Color al hacer hover */
+}
+
+.tarjeta-negra .learn-more {
+    color: #FFC857;
+}
+
+.tarjeta-negra .learn-more:hover {
+    color: #E6B744;
 }
