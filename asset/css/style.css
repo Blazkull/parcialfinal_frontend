@@ -342,12 +342,12 @@ header{
 }
 
 /* CONTENIDO DE LA CARD */
-..box__card-Horizontal h2{
+.box__card-Horizontal h2{
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
-..box__card-Horizontal p{
+.box__card-Horizontal p{
     margin-top: 20px;
 }
 .box__card-Horizontal img{
