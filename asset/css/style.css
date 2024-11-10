@@ -303,16 +303,23 @@ header{
     padding: 0px 20px;
 }
 .text_card-horizontal{
-    max-width: 800px;
-    margin:auto;
+    max-width: 1200px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
 }
 .text_card-horizontal h2{
     font-size: var(--text_size_title);
     font-weight: 600;
-    color: var(--color_text-secundary); 
+    color: var(--color_text-tertiary); 
+    background-color: var(--color_text-resaltado);
+    padding: 10px 20px;
 }
 .text_card-horizontal p{
-    color: var(--color_text-secundary);
+    color: var(--color_text-tertiary);
     font-weight: 500;
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
@@ -328,12 +335,13 @@ header{
 
 /*TAMAÑO DE LA CARD */
 .box__card-Horizontal{
-    max-width: 500px;
+    max-width: 600px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin:14px;
     transition: all 300ms;
+    display: flex;
 
 }
 .box__card-Horizontal:hover{
@@ -342,12 +350,12 @@ header{
 }
 
 /* CONTENIDO DE LA CARD */
-..box__card-Horizontal h2{
+.box__card-Horizontal h2{
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
-..box__card-Horizontal p{
+.box__card-Horizontal p{
     margin-top: 20px;
 }
 .box__card-Horizontal img{
