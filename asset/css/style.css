@@ -6,8 +6,8 @@
     --color_text-primary: #AB29CA;
     --color_text-secundary: #d3d9df;
     --color_text-tertiary: #485663;
-    --color_text-resaltado:#affc62;
-    --main_color-primary: #9A00BF;
+    --color_text-resaltado:#b5f96a;
+    --main_color-primary: #00bf96;
     --main_color-secundary: #F4D4FB;
     --background-color: #FAFBFE;
     --lowText_font_size: 16px;
@@ -17,6 +17,14 @@
     --text_paragraph: 16px;
     --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
     --main_color-back:#121613;
+
+
+    /*paleta de colores principales */
+    --quill-gray: #d6d8d4;
+    --tuatara: #20201f;
+    --dove-gray: #636363;
+    --sulu: #b5f96a;
+    --white: #fefefe;
 }
 
 /* SELECTOR UNIVERSAL */
@@ -362,3 +370,90 @@ header{
     width: 100px;
     height: 100px;
 }
+
+
+/*prueba footer*/
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left, .footer-middle, .footer-about, .footer-right {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .footer-left h2 {
+    font-size: 24px;
+  }
+  
+  .footer-left p {
+    color: #bbb;
+    line-height: 1.6;
+  }
+  
+  .footer-middle h3, .footer-about h3, .footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-middle ul, .footer-about ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle li, .footer-about li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-middle a, .footer-about a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-right form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-right input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+  }
+  
+  .footer-right button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    color: #bbb;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }

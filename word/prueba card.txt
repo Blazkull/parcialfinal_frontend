@@ -1,0 +1,116 @@
+<div class="card-container">
+  <div class="card">
+    <div class="card-content">
+      <h3><span>Search engine</span> optimization</h3>
+      <p>Learn more</p>
+    </div>
+    <div class="card-image">
+      <!-- Aquí puedes agregar una imagen usando <img> o mediante CSS -->
+      <img src="ruta-de-la-imagen-seo.png" alt="SEO Icon">
+    </div>
+  </div>
+  <div class="card dark">
+    <div class="card-content">
+      <h3><span>Pay per click</span> advertising</h3>
+      <p>Learn more</p>
+    </div>
+    <div class="card-image">
+      <img src="ruta-de-la-imagen-ppc.png" alt="PPC Icon">
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <h3><span>Social media</span> marketing</h3>
+      <p>Learn more</p>
+    </div>
+    <div class="card-image">
+      <img src="ruta-de-la-imagen-social.png" alt="Social Media Icon">
+    </div>
+  </div>
+  <div class="card dark">
+    <div class="card-content">
+      <h3><span>E-mail</span> marketing</h3>
+      <p>Learn more</p>
+    </div>
+    <div class="card-image">
+      <img src="ruta-de-la-imagen-email.png" alt="Email Icon">
+    </div>
+  </div>
+</div>
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 150px;
+}
+
+.card.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-content h3 span {
+  color: #a0e400;
+}
+
+.card-content p {
+  margin-top: 10px;
+  color: #a0e400;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.card-content p::before {
+  content: "\25B6"; /* Flecha de icono */
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.card-image {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 60px;
+  height: 60px;
+}
