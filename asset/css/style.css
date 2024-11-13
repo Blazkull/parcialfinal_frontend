@@ -453,34 +453,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*prueba footer*/
 footer {
     background-color: #222;
@@ -574,3 +546,67 @@ footer {
     margin-top: 20px;
     color: #777;
 }
+
+
+
+
+/* PAGINA ABOUT */
+
+.container__sobreNosotros {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca el título encima del párrafo */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.container__about-principal{
+padding-top: 100px;
+margin-bottom: 100px;
+width: 1200px;
+height: 50vh;
+margin: auto;
+
+}
+.container__sobreNosotros img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Oscurece la imagen para resaltar el texto */
+}
+
+.container__sobreNosotros h1,
+.container__sobreNosotros p {
+    z-index: 1; 
+    margin: 5px 0; 
+    width: 800px;
+}
+.container__sobreNosotros h1{
+    color: var(--white);
+    font-size: 70px;
+}
+
+.container__sobreNosotros p{
+    color: var(--white);
+    font-size: var(--lowText_font_size);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color_text-resaltado); 
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+
