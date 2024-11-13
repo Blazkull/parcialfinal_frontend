@@ -264,6 +264,10 @@ header {
     color: var(--color_text-tertiary);
 }
 
+
+
+
+
 /* CARTS DISTRIBUCION DENTRO DEL ESPACIO*/
 .container__box-cardPrimary {
     display: flex;
@@ -274,15 +278,94 @@ header {
 }
 
 /*TAMAÑO DE LA CARD */
-.box__card-primary {
-    max-width: 350px;
-    padding: 60px 40px;
-    border: 1px solid #e6e6e6;
-    border-radius: 20px;
-    margin: 14px;
-    transition: all 300ms;
 
+.box__card-primary_text__service img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Oscurece la imagen para resaltar el texto */
+    
 }
+
+.container__card-service {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
+    justify-content: space-between; /* Distribuye las tarjetas con espacio uniforme */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    padding: 20px;
+}
+.container_img_serv {
+    background:  url('https://img.freepik.com/vector-gratis/conexiones-fondo-verde_53876-90941.jpg?t=st=1731516407~exp=1731520007~hmac=664355547ed3fdc4a81612a82ec48d4062e041457d96de4cadc55faed2ca4687&w=1380') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-bottom: 80px;
+    text-shadow: 0 1px 3px rgba(35, 255, 127, 0.925);
+    padding: 50px;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    max-width: border-box;
+  }
+.box__card-primary {
+    flex: 1 1 calc(33.33% - 20px); /* Ajusta las tarjetas en filas de 3 */
+    max-width: 450px; /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye relleno y borde en el tamaño total */
+    text-align: auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+}
+
+.box__card-primary img {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 150px; /* Altura máxima para evitar imágenes desproporcionadas */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortes */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.box__card-primary h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.box__card-primary p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.box__card-primary a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.box__card-primary a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .box__card-primary {
+        flex: 1 1 calc(50% - 20px); /* Ajusta a 2 tarjetas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .box__card-primary {
+        flex: 1 1 100%; /* Ajusta a 1 tarjeta por fila */
+    }
+}
+
 
 .box__card-primary:hover {
     border: 1px solid transparent;
