@@ -297,7 +297,7 @@ header {
     gap: 20px; /* Espaciado entre las tarjetas */
     padding: 20px;
 }
-.container_img_serv {
+.container_img_serv img {
     height: 40vh;
     display: flex;
     justify-content: center;
