@@ -1,0 +1,61 @@
+/* COVER - INICIO */
+.container__cover{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: var(--main_color-back);
+
+}
+
+.cover{
+    max-width: 1200px;
+    margin: auto; /*colocar dentro de la medida*/
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; /*centrar contenido */
+    padding: 0px 20px; /* mantener la misma medida 0px ariiba y abajo y 20 derecha e izquierda*/ 
+}
+.text__cover{
+    width: 100%;
+    padding-right: 150px;
+}
+.text__cover h1{
+    font-size: 80px;
+    color: var(--color_text-secundary)
+}
+.text__cover p{
+    font-size: var(--text_paragraph);
+    color: var(--color_text-tertiary);
+    margin-top:40px ;
+}
+.text__cover span{
+    color: #affc62;
+}
+
+/* boton de cover */
+.btn__text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center; /* colocar texto en la mitad del boton */
+    font-weight: 500;/* grosor de texto */
+    color: white;
+    background-color: var(--main_color-primary);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;/* colocar manito al pasar el mouse*/
+    transition: all 300ms;
+}
+.btn__text:hover{
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-primary);
+}
+
+/* CONTENEDOR DE IMAGEN*/
+.image__cover{
+    width: 100%;
+}
+.image__cover img{
+    width: 550px;
+}
