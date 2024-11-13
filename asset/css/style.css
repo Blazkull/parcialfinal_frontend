@@ -298,7 +298,7 @@ header {
     padding: 20px;
 }
 .container_img_serv {
-    background-image:url('./image/icons/Captura de pantalla 2024-11-13 110927.png') no-repeat center center/cover;
+    background-image:url('/asset/image/Services/Captura_de_pantalla_2024-11-13_103453-removebg-preview.png') no-repeat center center/cover;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -311,6 +311,7 @@ header {
     width: auto;
     text-align: center;
     max-width: border-box;
+    z-index: 1;
   }
 .box__card-primary {
     flex: 1 1 calc(33.33% - 20px); /* Ajusta las tarjetas en filas de 3 */
@@ -691,5 +692,6 @@ margin: auto;
     opacity: 0.5;
     z-index: 1; 
 }
+
 
 
