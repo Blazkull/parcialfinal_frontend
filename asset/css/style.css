@@ -298,7 +298,6 @@ header {
     padding: 20px;
 }
 .container_img_serv {
-    background:  url('https://img.freepik.com/vector-gratis/conexiones-fondo-verde_53876-90941.jpg?t=st=1731516407~exp=1731520007~hmac=664355547ed3fdc4a81612a82ec48d4062e041457d96de4cadc55faed2ca4687&w=1380') no-repeat center center/cover;
     height: 40vh;
     display: flex;
     justify-content: center;
