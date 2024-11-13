@@ -297,8 +297,7 @@ header {
     gap: 20px; /* Espaciado entre las tarjetas */
     padding: 20px;
 }
-.container_img_serv img {
-    height: 40vh;
+.container_img_serv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,10 +306,15 @@ header {
     text-shadow: 0 1px 3px rgba(35, 255, 127, 0.925);
     padding: 50px;
     border-radius: 10px;
-    width: auto;
+    width: 100%; /* Ajusta para que cubra todo el ancho */
+    height: 100vh; /* Ajusta para que cubra toda la altura de la pantalla */
     text-align: center;
-    max-width: border-box;
-  }
+    box-sizing: border-box; /* Corrige el modelo de caja */
+    background-image: url('./image/icons/Captura de pantalla 2024-11-13 110927.png');
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+}
 .box__card-primary {
     flex: 1 1 calc(33.33% - 20px); /* Ajusta las tarjetas en filas de 3 */
     max-width: 450px; /* Limita el ancho máximo */
