@@ -922,3 +922,6 @@ margin: auto;
     
 }
 
+body{
+background-color: var(--quill-gray);
+}
