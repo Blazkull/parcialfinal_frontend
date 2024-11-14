@@ -42,12 +42,14 @@
 
 header {
     width: 100%;
-    height: 100px;
+    height: auto;
     position: fixed;
     /*para que se coloque encima de todo*/
     z-index: 100;
     /* asegurar que quede por arriba */
-    padding-top: 10px;
+    padding-top: 5px;
+    background-color: var(--background-color);
+
 
 }
 
@@ -709,15 +711,16 @@ footer {
     justify-content: center;
     color: white;
     text-align: center;
-    
+ 
 }
 
 .container__about-principal{
-padding-top: 100px;
+padding-top: -100px;
 margin-bottom: 100px;
 width: 1200px;
-height: 50vh;
+height: 70vh;
 margin: auto;
+
 
 }
 .container__sobreNosotros img {
@@ -922,6 +925,3 @@ margin: auto;
     
 }
 
-body{
-background-color: var(--quill-gray);
-}
