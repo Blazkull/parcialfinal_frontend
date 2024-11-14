@@ -453,6 +453,8 @@ header {
 }
 
 
+
+
 /* CARD ESPECIALIDADES */
 .container__card-horizonal {
     padding-top: 100px;
@@ -533,6 +535,67 @@ header {
 
 }
 
+
+/* ABOUT COMPANY */
+.container__about-company {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  
+
+}
+
+.about_company {
+    max-width: 1200px;
+    margin: auto;
+    /*colocar dentro de la medida*/
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    /*centrar contenido */
+    padding: 20px 40px;
+
+  
+}
+
+.text_about-company {
+    width: 100%;
+    padding-right: 80px;
+}
+
+.text_about-company h2 {
+    font-size: 50px;
+    color: var(--color_text-tertiary);
+}
+
+.text_about-company p {
+    font-size: var(--text_paragraph);
+    color: var(--color_text-tertiary);
+    margin-top: 20px;
+}
+
+
+/* SESSION tecnologias */
+.container_tecnologias {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CONTENEDOR DE IMAGEN*/
+.img_about-company {
+    width: 100%;
+
+}
+.img_aboutcompany-rigth{
+    border-radius: 20px;
+}
+.img_about-company img {
+    width: 600px;
+    height: 500px;
+}
 
 
 
@@ -694,4 +757,168 @@ margin: auto;
 }
 
 
+/*  ESTILOS GENERALES CARDS PILARES */
+
+.container__card-factores {
+    padding-top: 50px;
+}
+
+.card__primary {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+
+}
+
+.text__card-primary {
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p {
+    color: var(--color_text-tertiary);
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+}
+
+.text__card-primary h2 {
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-tertiary);
+}
+
+
+
+
+
+/* CARTS DISTRIBUCION DENTRO DEL ESPACIO*/
+.container__box-cardPrimary-factores {
+    display: flex;
+    /* PARA QUE SE COLOQUE UNO DE BAJO DEL OTRO CUANDO SEA MOBILE*/
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/*TAMAÑO DE LA CARD */
+
+
+.box__card-primaryFactory {
+    
+    max-width: 250px; /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye relleno y borde en el tamaño total */
+    text-align: auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+    transition: all 300ms;
+}
+.box__card-primaryFactory:hover{
+    background-color: var(--sulu);
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+    transform: scale(1.1);
+}
+
+.box__card-primaryFactory img {
+    width: 100%; /
+    height: auto; 
+    max-height: 150px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+.box__card-primaryFactory h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+
+/*   MIEMBROS DEL EQUIPO */
+
+.container__miembros{
+    padding: 50px 0px;
+}
+
+.card_miembrosEquipo {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+
+
+}
+.text_card-miembrosEquipo{
+    max-width: 800px;
+    margin: auto;
+   
+}
+.text_card-miembrosEquipo h2{
+    font-size: 40px;
+}
+.text_card-miembrosEquipo p{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+.card_empleados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.card__trabajador {
+    height: auto;
+    max-width: 350px; 
+    box-sizing: border-box; 
+    text-align: auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 300ms;
+    
+}
+.card__trabajador:hover{
+    border: 2px;
+    border-color: var(--sulu);
+    box-shadow: 0 4px 8px var(--color_text-resaltado);
+    transform: scale(1.1);
+}
+
+.card__trabajador img{
+    width: 150px;
+    border-radius: 80px 80px 60px 0px;
+}
+.card__trabajador h3{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.card__trabajador h6{
+    font-size:10px;
+ 
+    color: var(--dove-gray);
+}
+
+
+.card__trabajador p{
+    width:auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.img_redes{
+    max-width: 50px;
+    height: auto;
+    padding-top: 10px;
+    
+}
 
