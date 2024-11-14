@@ -924,4 +924,91 @@ margin: auto;
     padding-top: 10px;
     
 }
+.form_contact{
+    width: 1200px;
+    
+    margin: auto;
+ 
+}
+.container__form{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1200px;
 
+   
+
+}
+.box_formulario{
+    color: var(--color_text-tertiary);
+    display: felx;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.input-box{
+    position: relative;
+}
+.input-box > input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background-color: #00bf96;
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transform: .3s;
+    color: white;
+}
+
+.input-box > input:focus, .input-box>textarea:focus{
+    border-bottom: 3px solid red;
+}
+.input-box > input:focus::placeholder,
+ .input-box>textarea:focus::placeholder{
+    color: transparent;
+}
+.input-box > input::placeholder, 
+.input-box>textarea::placeholder{
+    color: gold;
+}
+.input-box > textarea{
+    width: 100%;
+    height: 120px;
+    background-color: #00bf96;
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transform: .3s;
+    color: white;
+    outline: none;
+
+}
+.input-box > i{
+    color:black ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: .3s;
+}
+.input-box > input:focus i{
+    color: red;
+}
+form> button{
+    background-color: #AB29CA;
+    color: white;
+    border: none;
+    outline:none;
+    cursor:pointer;
+    padding: 10px;
+}
+
+form> button:hover{
+    background-color: black;
+    color: white;
+}
