@@ -9,7 +9,7 @@ document.querySelectorAll(".menu .ul_links .il_links a").forEach((link) => {
 // menu filtro categorias
 
 // Selecciona los botones de las categorías
-const categories = document.querySelectorAll('.cateogiras button');
+const categories = document.querySelectorAll('.categorias button');
 // Selecciona los divs de las carts por su clase contenedora
 const carts = document.querySelectorAll('.container__trust .card__trust');
 
