@@ -51,7 +51,83 @@
 
     </header>
     <main>
-        <h1>llegacoleto</h1>
+      <section class="body_contact">
+        <div class="container_contact">
+            <!-- Imagen de fondo -->
+            <div class="background-banner">
+                <img src="asset/image/contact/diseno-minimalista-degradado-onda-fondo_483537-5170.jpg" alt="Fondo principal">
+            </div>
+    
+            <!-- Título principal -->
+            <div class="titulo_contact">
+                <h1>Nuestra Ubicación</h1>
+            </div>
+    
+            <!-- Contenedor del párrafo y mapa -->
+            <div class="content_section">
+                <div class="ubicacion_parrafo">
+                    <p>
+                        Nuestra empresa se encuentra estratégicamente ubicada en el corazón de Barranquilla, la vibrante "Puerta de Oro de Colombia". 
+                        Desde aquí, conectamos con el dinamismo de una ciudad en constante crecimiento, conocida por su espíritu innovador y su rica 
+                        cultura caribeña. Nuestra ubicación nos permite estar cerca de nuestros clientes, proveedores y aliados estratégicos, garantizando 
+                        accesibilidad y una atención personalizada.
+                    </p>
+                </div>
+    
+                <div id="location" class="map_section">
+                    <iframe class="embed-responsive-item"
+                            src="https://maps.google.com/maps?q=Barranquilla,%20Colombia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="datos_contact">
+                <h2 class="titulo_contact2">Datos-Contacto</h2>
+                <div id="contact" class="form_section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Ingrese su correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensaje</label>
+                                    <textarea class="form-control" id="message" rows="6"
+                                        placeholder="Ingrese su mensaje"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group text-right">
+                                    <label for="subject">Motivo de contacto</label>
+                                    <select class="form-control" id="subject">
+                                        <option value="consulta">Consulta</option>
+                                        <option value="comentario">Comentario</option>
+                                        <option value="sugerencia">Sugerencia</option>
+                                    </select>
+                                </div>
+                                <div class="form-group text-right">
+                                    <label for="category">Categoría</label>
+                                    <select class="form-control" id="category">
+                                        <option value="general">General</option>
+                                        <option value="ventas">Ventas</option>
+                                        <option value="soporte">Soporte</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer>
