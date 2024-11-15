@@ -1528,8 +1528,8 @@ form>button:hover {
     border-radius: 8px;
     color: var(--background-color);
     transition: 0.6s;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     
 }
 
