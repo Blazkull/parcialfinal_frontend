@@ -300,21 +300,41 @@ header {
     padding: 20px;
 }
 .container_img_serv {
-    background-image: url("https://github.com/Blazkull/parcialfinal_frontend/blob/main/asset/image/Services/Captura%20de%20pantalla%202024-11-13%20110927.png?raw=true") no-repeat center center/cover;
-    height: 40vh;
+    position: relative;
+    width: 100%;
+    height: %;
+}
+.container_img_serv img{
+    width: 100%;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.2;
+    border-radius: 10px;
     color: black;
     margin-bottom: 80px;
     text-shadow: 0 1px 3px rgba(35, 255, 127, 0.925);
-    padding: 50px;
-    border-radius: 10px;
-    width: auto;
-    text-align: center;
-    max-width: border-box;
+    justify-content: center;
+    position: relative;  /* La imagen está en el fondo */
+    z-index: 1;  /* Mantener la imagen en el fondo */
+    object-fit: cover;
+}
 
-  }
+.text__service {
+    position: absolute; /* Coloca el texto encima de la imagen */
+    top: 50%;           /* Centra el texto verticalmente */
+    left: 50%;          /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%);  /* Asegura que el texto esté perfectamente centrado */
+    z-index: 2;         /* Asegura que el texto quede encima de la imagen */
+    color: white;       /* Asegura que el texto sea legible */
+    padding: 10px;      /* Añade un poco de espacio alrededor del texto */
+    text-align: center; /* Centra el texto */
+}
+
+container__services {
+    position: relative; /* Relativo para que los elementos se posicionen dentro de este */
+    z-index: 3; /* Asegura que los otros elementos queden encima de la imagen */
+    margin-top: 30px; /* Ajusta el margen para separar los contenedores */
+}
 .box__card-primary {
     flex: 1 1 calc(33.33% - 20px); /* Ajusta las tarjetas en filas de 3 */
     max-width: 450px; /* Limita el ancho máximo */
