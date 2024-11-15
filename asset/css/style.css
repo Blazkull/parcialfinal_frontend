@@ -300,21 +300,41 @@ header {
     padding: 20px;
 }
 .container_img_serv {
-    background-image: url("https://github.com/Blazkull/parcialfinal_frontend/blob/main/asset/image/Services/Captura%20de%20pantalla%202024-11-13%20110927.png?raw=true") no-repeat center center/cover;
-    height: 40vh;
+    position: relative;
+    width: 100%;
+    height: %;
+}
+.container_img_serv img{
+    width: 100%;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.2;
+    border-radius: 10px;
     color: black;
     margin-bottom: 80px;
     text-shadow: 0 1px 3px rgba(35, 255, 127, 0.925);
-    padding: 50px;
-    border-radius: 10px;
-    width: auto;
-    text-align: center;
-    max-width: border-box;
+    justify-content: center;
+    position: relative;  /* La imagen está en el fondo */
+    z-index: 1;  /* Mantener la imagen en el fondo */
+    object-fit: cover;
+}
 
-  }
+.text__service {
+    position: absolute; /* Coloca el texto encima de la imagen */
+    top: 50%;           /* Centra el texto verticalmente */
+    left: 50%;          /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%);  /* Asegura que el texto esté perfectamente centrado */
+    z-index: 2;         /* Asegura que el texto quede encima de la imagen */
+    color: white;       /* Asegura que el texto sea legible */
+    padding: 10px;      /* Añade un poco de espacio alrededor del texto */
+    text-align: center; /* Centra el texto */
+}
+
+container__services {
+    position: relative; /* Relativo para que los elementos se posicionen dentro de este */
+    z-index: 3; /* Asegura que los otros elementos queden encima de la imagen */
+    margin-top: 30px; /* Ajusta el margen para separar los contenedores */
+}
 .box__card-primary {
     flex: 1 1 calc(33.33% - 20px); /* Ajusta las tarjetas en filas de 3 */
     max-width: 450px; /* Limita el ancho máximo */
@@ -1031,6 +1051,7 @@ form> button:hover{
 
 
 
+
 /*   Portafolio - filtro */
 
 
@@ -1073,3 +1094,68 @@ form> button:hover{
   }
  
 
+
+/*   Portafolio - filtro */
+.container__filtro-categoria{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.boxprimary__categoria{
+    max-width: 1200px;
+    margin: auto;
+    /*colocar dentro de la medida*/
+    margin-top: 50px;
+    display: flex;
+
+    align-items: center;
+    /*centrar contenido */
+    padding: 0px 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories button.active {
+    background-color: #ffd700;
+    color: #000;
+}
+
+
+.image-container__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container__image img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-container__image img:hover {
+    box-shadow: 0px 5px 10px rgba(255, 0, 0, 0.5);
+}
+.desarrollo-web {
+    background-color: lightblue;
+  }
+  
+  .desarrollo-software {
+    background-color: lightgreen;
+  }
