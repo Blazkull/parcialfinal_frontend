@@ -1159,3 +1159,8 @@ form> button:hover{
   .desarrollo-software {
     background-color: lightgreen;
   }
+
+
+  body{
+    background-color: red;
+  }

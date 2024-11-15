@@ -6,7 +6,7 @@ document.querySelectorAll(".menu .ul_links .il_links a").forEach((link) => {
   });
 });
 
-// menu filtro
+// menu filtro categorias
 
 // Selecciona los botones de las categorías
 const categories = document.querySelectorAll('.cateogiras button');
