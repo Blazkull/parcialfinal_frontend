@@ -1024,3 +1024,69 @@ form> button:hover{
     background-color: black;
     color: white;
 }
+
+
+/*   Portafolio - filtro */
+.container__filtro-categoria{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.boxprimary__categoria{
+    max-width: 1200px;
+    margin: auto;
+    /*colocar dentro de la medida*/
+    margin-top: 50px;
+    display: flex;
+
+    align-items: center;
+    /*centrar contenido */
+    padding: 0px 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories button.active {
+    background-color: #ffd700;
+    color: #000;
+}
+
+
+.image-container__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container__image img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-container__image img:hover {
+    box-shadow: 0px 5px 10px rgba(255, 0, 0, 0.5);
+}
+.desarrollo-web {
+    background-color: lightblue;
+  }
+  
+  .desarrollo-software {
+    background-color: lightgreen;
+  }
