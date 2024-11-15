@@ -778,6 +778,7 @@ margin: auto;
     padding-top: 50px;
 }
 
+
 .card__primary {
     max-width: 1200px;
     margin: auto;
@@ -1024,3 +1025,51 @@ form> button:hover{
     background-color: black;
     color: white;
 }
+
+
+
+
+
+
+/*   Portafolio - filtro */
+
+
+.container__image{
+    padding-top: 100px;
+}
+
+/* Animación de entrada */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Duración de la animación */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Invisible al inicio */
+      transform: translateY(10px); /* Posición inicial */
+    }
+    to {
+      opacity: 1; /* Totalmente visible */
+      transform: translateY(0); /* Posición final */
+    }
+  }
+  
+  /* Animación de salida */
+  .fade-out {
+    opacity: 1;
+    animation: fadeOut 0.5s forwards; /* Duración de la animación */
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1; /* Totalmente visible */
+      transform: translateY(0); /* Posición inicial */
+    }
+    to {
+      opacity: 0; /* Invisible */
+      transform: translateY(10px); /* Posición final */
+    }
+  }
+ 
+
