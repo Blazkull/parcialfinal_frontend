@@ -813,7 +813,7 @@ container__services {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 20px;
 }
 
 /* CONTENEDOR DE IMAGEN*/
@@ -827,8 +827,8 @@ container__services {
 }
 
 .img_about-company img {
-    width: 100%;
-    height: auto;
+    width: 600px;
+    height: 500px;
 }
 
 
