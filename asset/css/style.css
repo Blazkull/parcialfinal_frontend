@@ -123,7 +123,7 @@ header {
     display: block;
     /* esto es para convertir en bloque el boton */
     padding: 8px 40px;
-   
+
     /* borde de boton - color con variable*/
     border-radius: 8px;
     font-weight: 500;
@@ -215,7 +215,7 @@ header {
     font-weight: 500;
     /* grosor de texto */
     color: white;
-    background-color: var(--main_color-primary);
+    background-color: var(--main_color-back);
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -224,9 +224,9 @@ header {
 }
 
 .btn__text:hover {
-    background: transparent;
-    border: 2px solid var(--main_color-primary);
-    color: var(--color_text-primary);
+    background: var(--background-color);
+    border: 2px solid var(--main_color-back);
+    color: var(--main_color-back);
 }
 
 /* CONTENEDOR DE IMAGEN*/
@@ -572,8 +572,8 @@ container__services {
 }
 
 .box__card-Horizontal:hover {
-    border: 1px solid transparent;
-    box-shadow: var(--box_shadow-primary);
+    border: 1px solid var(--sulu);
+    box-shadow: 0 4px 10px var(--sulu);
 }
 
 
@@ -714,13 +714,14 @@ container__services {
 
 /* CONTENIDO DE LA CARD */
 
-.box__card-Horizontal h2{
+.box__card-Horizontal h2 {
 
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
-.box__card-Horizontal p{
+
+.box__card-Horizontal p {
 
     margin-top: 20px;
 }
@@ -735,7 +736,7 @@ container__services {
 /* ABOUT COMPANY */
 .container__about-company {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
 
 }
@@ -744,7 +745,7 @@ container__services {
     max-width: 1200px;
     margin: auto;
     /*colocar dentro de la medida*/
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     /*centrar contenido */
@@ -971,7 +972,7 @@ footer {
 /*  ESTILOS GENERALES CARDS PILARES */
 
 .container__card-factores {
-    padding-top: 50px;
+   
 }
 
 
@@ -1146,13 +1147,20 @@ footer {
 
 }
 
+/* FORMULARIO CONTACTO */
+
 .form_contact {
     width: 1200px;
-
     margin: auto;
+    height: auto;
+    
+    padding-bottom: 50px;
 
 }
-
+.box_img-form img{
+    width: 100%;
+    height: 100%;
+}
 .container__form {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -1160,7 +1168,8 @@ footer {
     gap: 10px;
     width: 1200px;
 
-
+    background-color : var(--color_text-secundary) ;
+    border-radius: 22px;
 
 }
 
@@ -1174,7 +1183,17 @@ form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+
+}
+.box_formulario h2{
+    padding-bottom: 10px;
+    color: var(--main_color-back);
+    font-size: 30px;
+}
+.box_formulario p{
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: var(--main_color-back);
 }
 
 .input-box {
@@ -1186,16 +1205,16 @@ form {
     height: 40px;
     padding: 0 10px;
     outline: none;
-    background-color: #00bf96;
-    border: 3px solid transparent;
+    background-color: transparent;
+    border: 1px solid var(--color_text-tertiary);
     letter-spacing: 1px;
     transform: .3s;
-    color: white;
+    color: var(--main_color-back);
 }
 
 .input-box>input:focus,
 .input-box>textarea:focus {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid var(--color_text-resaltado);
 }
 
 .input-box>input:focus::placeholder,
@@ -1205,17 +1224,17 @@ form {
 
 .input-box>input::placeholder,
 .input-box>textarea::placeholder {
-    color: gold;
+    color: var(--dove-gray);
 }
 
 .input-box>textarea {
     width: 100%;
-    height: 120px;
-    background-color: #00bf96;
-    border: 3px solid transparent;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid var(--color_text-tertiary);
     letter-spacing: 1px;
     transform: .3s;
-    color: white;
+    color: var(--main_color-back);
     outline: none;
 
 }
@@ -1229,22 +1248,31 @@ form {
     transition: .3s;
 }
 
-.input-box>input:focus i {
-    color: red;
+.input-box:focus-within > i {
+    color: var(--color_text-tertiary);
 }
 
 form>button {
-    background-color: #AB29CA;
+    background-color: var(--main_color-back);
     color: white;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--main_color-back);
+    transition: 0.3s;
+    width: 100%
 }
 
-form>button:hover {
-    background-color: black;
-    color: white;
+
+form > button:hover {
+    background-color: var(--background-color);
+    color: var(--main_color-back);
+    border: 1px solid var(--main_color-back);
+    font-weight: 600;
 }
 
 
@@ -1454,7 +1482,7 @@ form>button:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color:var(--color_text-secundary);
+    background-color: var(--color_text-secundary);
     color: var(--main_color-back);
     font-style: 12px;
     font-weight: 800;
@@ -1471,7 +1499,8 @@ form>button:hover {
     background-color: var(--color_text-resaltado);
     color: var(--main_color-back);
 }
-.categorias .button:hover{
+
+.categorias .button:hover {
     background-color: var(--color_text-resaltado);
     color: var(--main_color-back);
 }
@@ -1500,35 +1529,36 @@ form>button:hover {
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 300ms;
-    border:0.3px  solid #cfcdcd;
-    
-    
-    
+    border: 0.3px solid #cfcdcd;
+
+
+
 }
 
 .box__card-primaryCategorias:hover {
-    
+
     box-shadow: 0px 8px 8px var(--color_text-resaltado);
     transform: scale(1.1);
 }
 
-.box__card-primaryCategorias h5{
+.box__card-primaryCategorias h5 {
     color: var(--main_color-back);
     font-size: 16px;
     font-weight: 600;
     padding-bottom: 10px;
 }
+
 .box__card-primaryCategorias img {
     width: 220px;
     height: 100%;
     max-height: 150px;
-    object-fit:contain;
+    object-fit: contain;
     border-radius: 8px;
 
-    
+
 }
 
-.box__card-primaryCategorias a{
+.box__card-primaryCategorias a {
     background-color: var(--main_color-back);
     padding: 5px 10px;
     border-radius: 8px;
@@ -1536,18 +1566,18 @@ form>button:hover {
     transition: 0.6s;
     font-size: 14px;
     font-weight: 500;
-    
+
 }
 
 
-.box__card-primaryCategorias a:hover{
+.box__card-primaryCategorias a:hover {
     background-color: var(--sulu);
     padding: 5px 10px;
     border-radius: 8px;
     color: var(--main_color-back);
     border-color: var(--main_color-back);
 
-  
+
 }
 
 
@@ -1591,7 +1621,7 @@ form>button:hover {
 
 .map_section {
     display: block;
-    flex:1;
+    flex: 1;
 }
 
 .map_section iframe {
@@ -1662,4 +1692,3 @@ select {
         max-width: 100%;
     }
 }
-
