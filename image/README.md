@@ -1,1 +1,0 @@
-# parcialfinal_frontend
