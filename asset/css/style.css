@@ -1727,3 +1727,151 @@ select {
         max-width: 100%;
     }
 }
+
+.container__contacto-principal {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta según el tamaño deseado */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__contacto-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.container__contacto-principal .overlay-contacto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container__contacto-principal h1 {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+/* Section Title */
+.container_datos-empresa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo_contactanos {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-secundadio-cont {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Horizontal Contact Containers */
+
+
+/* Contenedor del banner */
+.container__contacto-principal {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta según el tamaño del banner deseado */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__contacto-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: auto;
+}
+
+.overlay-contacto {
+    position: absolute;
+    top: 2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container__contacto-principal h1 {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal de contacto */
+.container-contact-wrapper {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme */
+    flex-wrap: nowrap; /* Mantiene los elementos en una sola fila */
+    gap: 20px; /* Espaciado entre los contenedores */
+    margin: 20px auto;
+    max-width: 1200px; /* Limitar el ancho máximo del diseño */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos individuales de los contenedores */
+.container-contact-minibody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%; /* Ajusta según el diseño deseado */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+.container-contact-minibody img {
+    width: 50px; /* Ajusta el tamaño según el diseño deseado */
+    height: 50px; /* Mantén proporciones cuadradas */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+/* Estilo del texto y título */
+.titulo_cont-1 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.titulo_cont_secundario {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container-contact-wrapper {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas */
+        gap: 15px;
+    }
+
+    .container-contact-minibody {
+        width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+    }
+}
