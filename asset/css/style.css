@@ -193,6 +193,7 @@ header {
 .text__cover span {
     color: #affc62;
 }
+
 .btn_cover {
     display: block;
     width: 150px;
@@ -219,13 +220,15 @@ header {
 
 /* SESSION tecnologias */
 
-.img_tecnologia{
+.img_tecnologia {
     border-radius: 30px;
-    
+
 }
-.img_tecnologia:hover{
+
+.img_tecnologia:hover {
     box-shadow: 0px 4px 12px var(--sulu);
 }
+
 .container_tecnologias {
     max-width: 1200px;
     margin: 40px auto;
@@ -301,7 +304,9 @@ header {
     color: var(--color_text-tertiary);
 }
 
-
+.text__especialidad h3 {
+    font-size: 30px;
+}
 
 
 
@@ -515,18 +520,19 @@ container__services {
 }
 
 .text__about p {
-    width:80%;
+    width: 80%;
     font-size: 20px;
     margin-top: 40px;
     color: var(--color_text-tertiary);
 }
-.text__about a{
+
+.text__about a {
     width: 40%;
 }
 
 .image__about {
     width: 100%;
-    display: flex;   
+    display: flex;
 }
 
 .img_about img {
@@ -723,26 +729,7 @@ container__services {
     background-color: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .container-planes {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .options_cart {
-        width: 80%;
-        /* En pantallas más pequeñas, las tarjetas ocupan más espacio */
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .options_cart {
-        width: 100%;
-        /* En pantallas móviles, cada tarjeta ocupa todo el ancho */
-    }
-}
 
 
 
@@ -933,6 +920,25 @@ footer {
 }
 
 
+.container__contact {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* Coloca el título encima del párrafo */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+}
+
+.container__sobreNosotros h1 {
+    padding-top: 50px;
+
+}
+
 
 
 /* PAGINA ABOUT */
@@ -960,6 +966,16 @@ footer {
 
 
 }
+
+.container__contact-principal {
+    padding-top: -100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    width: 1200px;
+    height: 40vh;
+    margin: auto;
+}
+
 
 .container__sobreNosotros img {
     position: absolute;
@@ -1006,9 +1022,7 @@ footer {
 
 /*  ESTILOS GENERALES CARDS PILARES */
 
-.container__card-factores {
-   
-}
+.container__card-factores {}
 
 
 .card__primary {
@@ -1188,14 +1202,16 @@ footer {
     width: 1200px;
     margin: auto;
     height: auto;
-    
+
     padding-bottom: 50px;
 
 }
-.box_img-form img{
+
+.box_img-form img {
     width: 100%;
     height: 100%;
 }
+
 .container__form {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -1203,14 +1219,14 @@ footer {
     gap: 10px;
     width: 1200px;
 
-    background-color : var(--color_text-secundary) ;
+    background-color: var(--color_text-secundary);
     border-radius: 22px;
 
 }
 
 .box_formulario {
     color: var(--color_text-tertiary);
-    display: felx;
+    display: flex;
     flex-direction: column;
 }
 
@@ -1220,12 +1236,14 @@ form {
     text-align: center;
 
 }
-.box_formulario h2{
+
+.box_formulario h2 {
     padding-bottom: 10px;
     color: var(--main_color-back);
     font-size: 30px;
 }
-.box_formulario p{
+
+.box_formulario p {
     padding-bottom: 20px;
     font-size: 16px;
     color: var(--main_color-back);
@@ -1283,7 +1301,7 @@ form {
     transition: .3s;
 }
 
-.input-box:focus-within > i {
+.input-box:focus-within>i {
     color: var(--color_text-tertiary);
 }
 
@@ -1303,7 +1321,7 @@ form>button {
 }
 
 
-form > button:hover {
+form>button:hover {
     background-color: var(--background-color);
     color: var(--main_color-back);
     border: 1px solid var(--main_color-back);
@@ -1713,25 +1731,12 @@ select {
     background-color: #000307;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .content_section {
-        flex-direction: column;
-    }
-
-    .form_section .row {
-        flex-direction: column;
-    }
-
-    .col-md-6 {
-        max-width: 100%;
-    }
-}
 
 .container__contacto-principal {
     position: relative;
     width: 100%;
-    height: 300px; /* Ajusta según el tamaño deseado */
+    height: 300px;
+    /* Ajusta según el tamaño deseado */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1786,7 +1791,8 @@ select {
 .container__contacto-principal {
     position: relative;
     width: 100%;
-    height: 300px; /* Ajusta según el tamaño del banner deseado */
+    height: 300px;
+    /* Ajusta según el tamaño del banner deseado */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1820,11 +1826,15 @@ select {
 /* Contenedor principal de contacto */
 .container-contact-wrapper {
     display: flex;
-    justify-content: space-between; /* Espaciado uniforme */
-    flex-wrap: nowrap; /* Mantiene los elementos en una sola fila */
-    gap: 20px; /* Espaciado entre los contenedores */
+    justify-content: space-between;
+    /* Espaciado uniforme */
+    flex-wrap: nowrap;
+    /* Mantiene los elementos en una sola fila */
+    gap: 20px;
+    /* Espaciado entre los contenedores */
     margin: 20px auto;
-    max-width: 1200px; /* Limitar el ancho máximo del diseño */
+    max-width: 1200px;
+    /* Limitar el ancho máximo del diseño */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -1835,7 +1845,8 @@ select {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 22%; /* Ajusta según el diseño deseado */
+    width: 22%;
+    /* Ajusta según el diseño deseado */
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -1843,11 +1854,16 @@ select {
     background-color: white;
     text-align: center;
 }
+
 .container-contact-minibody img {
-    width: 50px; /* Ajusta el tamaño según el diseño deseado */
-    height: 50px; /* Mantén proporciones cuadradas */
-    margin-bottom: 15px; /* Espacio debajo de la imagen */
-    object-fit: contain; /* Asegura que la imagen no se deforme */
+    width: 50px;
+    /* Ajusta el tamaño según el diseño deseado */
+    height: 50px;
+    /* Mantén proporciones cuadradas */
+    margin-bottom: 15px;
+    /* Espacio debajo de la imagen */
+    object-fit: contain;
+    /* Asegura que la imagen no se deforme */
 }
 
 /* Estilo del texto y título */
@@ -1866,12 +1882,568 @@ select {
 
 /* Responsividad */
 @media (max-width: 768px) {
+
+
+    .cover {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+    }
+
+    .text__cover {
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .text__cover h1 {
+        font-size: 70px;
+    }
+
+    .text__cover p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .image__cover img {
+        width: 100%;
+
+    }
+
+    .img_tecnologia {
+        margin: 0px 10px;
+    }
+
+    .container__especialidad {
+        max-width: 100%;
+        padding-top: 30px;
+    }
+
+    .text__especialidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text__especialidad h2 {
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .text__especialidad h3 {
+        width: 90%;
+        text-align: left;
+
+    }
+
+    .text__especialidad p {
+        width: 90%;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .container__box-cardHorizontal {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box__card-Horizontal {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    .container-planes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image__especialidad{
+        margin: auto;
+    }
+    .image__especialidad img {
+        width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .box__card-Horizontal {
+        max-width: 100%;
+    }
+
+    .container__about {
+        display: flex;
+
+
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .text__about {
+        padding-right: 0px;
+    }
+
+    .text__about h2 {
+        width: 100%;
+    }
+
+    .text__about p {
+        width: 100%;
+    }
+
+    .img_about img {
+        width: 20%;
+    }
+
+    .text__about a {
+        width: 70%;
+    }
+
+    .container__form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+    .form_contact {
+        width: 100%;
+        padding-bottom: 0px;
+
+    }
+
+    .box_img-form {
+        width: 100%;
+    }
+
+    .box_formulario h2 {
+        font-size: 40px;
+    }
+
+    .container__about {
+        padding: 50px 0px;
+
+    }
+
+    .about {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0px 20px;
+
+
+
+    }
+
+    .box_formulario p {
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+
+    form>button {
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+
+    }
+
     .container-contact-wrapper {
-        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas */
+        flex-wrap: wrap;
+
         gap: 15px;
     }
 
     .container-contact-minibody {
-        width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+        width: 100%;
+
+    }
+
+    .content_section {
+        flex-direction: column;
+    }
+
+    .form_section .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+    }
+
+    .options_cart {
+        width: 100%;
+
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-left h3 {
+
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .footer-left p {
+        padding-top: 10px;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .footer-middle ul,
+    .footer-about ul {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .footer-bottom {
+        width: 90%;
+    }
+
+    .container__sobreNosotros h1 {
+        font-size: 40px;
+    }
+
+    .container__sobreNosotros p {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .about_company {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .text_about-company {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .img_aboutcompany-rigth {
+        border-radius: 10px;
+    }
+
+    .img_about-company img {
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .box__card-primaryFactory {
+        max-width: 600px;
+    }
+
+    .text_card-miembrosEquipo p {
+        width: 95%;
+    }
+
+    .container__miembros {
+        padding: 0px 20px;
+        padding-bottom: 50px;
+    }
+
+    .card_miembrosEquipo,
+    .card_empleados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_plan_empresarial_titulo {
+        padding: 0px 20px;
+    }
+
+    .container__portafolio h1 {
+        font-size: 50px;
+    }
+
+    .container__portafolio p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .box__card-primaryCategorias {
+        max-width: 600px;
+        padding: 20px 40px 70px 40px;
+    }
+
+    .container__sobreNosotros h1 {
+        padding-top: 100px;
+
+    }
+
+    .container__sobreNosotros h1 {
+        padding-top: 100px;
+
+    }
+
+    .container__contact-principal {
+        padding-top: -50px;
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+        width: 1200px;
+        height: 60vh;
+        margin: auto;
+    }
+
+    .titulo_contactanos {
+        font-size: 30px;
+        padding: 30px 10px;
+
+    }
+
+    .container_datos-empresa h2 {
+        font-size: 35px;
+        padding: 0px 20px;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .container_datos-empresa {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .container_datos-empresa p {
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cover {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+    }
+
+    .text__cover {
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .text__cover p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .image__cover {
+        width: auto;
+        align-items: center;
+        align-content: center;
+    }
+
+    .img_tecnologia {
+        width: 70px;
+    }
+
+    .container__especialidad {
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .text__especialidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text__especialidad h2 {
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .text__especialidad h3 {
+        width: 90%;
+        text-align: left;
+
+    }
+
+    .text__especialidad p {
+        width: 90%;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .container__box-cardHorizontal {
+        width: 100%;
+
+    }
+
+    .box__card-Horizontal {
+        width: 100%;
+    }
+
+    .container-planes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box__card-Horizontal {
+        max-width: 90%;
+    }
+
+    .about {
+        display: flex;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .text__about {
+        padding-right: 0px;
+    }
+
+    .text__about h2 {
+        width: 100%;
+    }
+
+    .text__about p {
+        width: 100%;
+    }
+
+    .img_about img {
+        width: 100%;
+    }
+
+    .text__about a {
+        width: 100%;
+    }
+
+    .container__form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+    .form_contact {
+        width: 100%;
+    }
+
+    .box_img-form {
+        width: 100%;
+    }
+
+    .box_formulario h2 {
+        font-size: 40px;
+    }
+
+    .box_formulario p {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    form>button {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .options_cart {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .cart_contact {
+        display: wrap;
+        justify-content: space-around;
+        gap: 20px;
+
+    }
+
+    .container-contact-minibody {
+        width: 45%;
+        gap: 0px;
+    }
+
+    .card_miembrosEquipo h2{ 
+        font-size: 45px;
+
+    }
+    .box__card-primaryFactory {
+        width: 350px;
+    }
+    .text_about-company {
+        padding-right: 0px;
+    }
+    
+    .text_about-company p{
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+        padding: 0px 10px;
+    }
+    .card_miembrosEquipo p{
+        font-size: 20px;
+        width: 90%;
+    }
+    .card_empleados {
+        display: flex;
+        
+
+    }
+
+    .card__trabajador {
+        height: auto;
+        max-width: 650px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 300ms;
+
+    }
+    .card__trabajador h3{
+        font-size: 40px;
+    }
+    .card__trabajador h6{
+        font-size: 20px;
+    }
+    .card__trabajador p{
+        font-size: 30px;
+    }
+    .card__trabajador a{
+        width: 100%;
+
+    }
+    .card__trabajador img{
+        width: 200px;
+    }
+    .input-box>input, .input-box>textarea {
+        font-size: 18px;
+    }
+    .image__about{
+        width:400px;
+        align-items: center;
+        align-content: center;
+        object-fit:cover;
     }
 }
