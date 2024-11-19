@@ -332,16 +332,21 @@ header {
     /* Oscurece la imagen para resaltar el texto */
 
 }
-
+.container_servicesPrimary{
+    max-width: 1200px;
+    margin: auto;
+}
 .container__card-service {
     display: flex;
     flex-wrap: wrap;
     /* Permite que las tarjetas se ajusten en filas */
-    justify-content: space-between;
+    justify-content: center;
     /* Distribuye las tarjetas con espacio uniforme */
     gap: 20px;
     /* Espaciado entre las tarjetas */
     padding: 20px;
+    width: 100%;
+    transition: 0.3s;
 }
 
 .container_img_serv {
@@ -1064,6 +1069,7 @@ footer {
     margin-top: 40px;
     gap: 20px;
     padding-bottom: 50px;
+    max-width: 1200px;
 }
 
 /*TAMAÑO DE LA CARD */
@@ -1920,7 +1926,7 @@ select {
         max-width: 100%;
         padding-top: 30px;
     }
-
+   
     .text__especialidad {
         display: flex;
         flex-direction: column;
