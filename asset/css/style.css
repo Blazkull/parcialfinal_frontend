@@ -1919,7 +1919,9 @@ select {
         width: 100%;
 
     }
-
+    .box__tecnologias{
+        width: 80%;
+    }
     .img_tecnologia {
         margin: 0px 10px;
     }
@@ -1973,7 +1975,7 @@ select {
         margin: auto;
     }
     .image__especialidad img {
-        width: 400px;
+        width: 200px;
         height: auto;
         padding-bottom: 20px;
         
