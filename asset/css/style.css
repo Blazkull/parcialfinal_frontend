@@ -348,6 +348,7 @@ header {
 .container_servicesPrimary{
     max-width: 1200px;
     margin: auto;
+    padding-top: 50px;
 }
 .container__card-service {
     display: flex;
@@ -654,6 +655,8 @@ container__services {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
 }
 
 /* Contenedor de los planes (alineado horizontalmente) */
