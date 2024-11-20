@@ -38,7 +38,7 @@
     /* quitar el estilo a los textos*/
     font-family: "Space Grotesk", serif;
     /* llamado de fuente al estilo */
-    
+
 }
 
 header {
@@ -50,6 +50,8 @@ header {
     padding-top: 0px;
     background-color: var(--background-color);
     position: relative;
+    animation: fadeIn;
+    animation-duration: 2s;
 
 }
 
@@ -98,37 +100,41 @@ header {
     align-items: center;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-.nav-links li{
+
+.nav-links li {
     color: var(--main_color-back);
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: var(--main_color-back);
     font-size: 18px;
     font-weight: 600;
 }
 
-.nav-links a:hover{
-   color:var(--sulu) ;
+.nav-links a:hover {
+    color: var(--sulu);
 }
-.nav-links a:active{
-    color:var(--sulu) ;
- }
-.hamburguer{
+
+.nav-links a:active {
+    color: var(--sulu);
+}
+
+.hamburguer {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
-.bar{
+
+.bar {
     width: 25px;
     height: 3px;
-    background-color:var(--main_color-back);
+    background-color: var(--main_color-back);
     margin: 4px 0px;
     transition: 0.3s;
 }
@@ -188,24 +194,25 @@ header {
     /*centrar contenido */
     padding: 0px 20px;
     /* mantener la misma medida 0px ariiba y abajo y 20 derecha e izquierda*/
-    animation: fadeIn; 
+    animation: fadeIn;
     animation-delay: 0.100s;
     animation-duration: 0.8s;
 }
 
-.container__cover {
-    animation: fadeInDown; 
-    animation-duration: 1s;
-}
+.container__cover {}
+
 .text__cover {
     width: 100%;
     padding-right: 150px;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+
 }
 
 .text__cover h1 {
     font-size: 80px;
     color: var(--color_text-secundary);
-    
+
 }
 
 .text__cover p {
@@ -216,6 +223,9 @@ header {
 
 .text__cover span {
     color: #affc62;
+    animation: bounceIn;
+    animation-duration: 4s;
+
 }
 
 .btn_cover {
@@ -246,9 +256,9 @@ header {
 
 .img_tecnologia {
     border-radius: 30px;
-    animation: fadeIn; 
+    animation: fadeIn;
     animation-duration: 3s;
-   
+
 
 }
 
@@ -293,7 +303,9 @@ header {
 /* CONTENEDOR DE IMAGEN*/
 .image__cover {
     width: 100%;
-    
+
+    animation: fadeInRight;
+    animation-duration: 2s;
 }
 
 .image__cover img {
@@ -350,10 +362,11 @@ header {
 
 /*TAMAÑO DE LA CARD */
 
-.tituloanimation{
-    animation: fadeInDown; 
-    animation-duration: 2s;
+.tituloanimation {
+    animation: fadeInDown;
+    animation-duration: 1s;
 }
+
 .box__card-primary_text__service img {
     position: absolute;
     top: 0;
@@ -365,11 +378,15 @@ header {
     /* Oscurece la imagen para resaltar el texto */
 
 }
-.container_servicesPrimary{
+
+.container_servicesPrimary {
     max-width: 1200px;
     margin: auto;
     padding-top: 50px;
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
+
 .container__card-service {
     display: flex;
     flex-wrap: wrap;
@@ -380,7 +397,7 @@ header {
     /* Espaciado entre las tarjetas */
     padding: 20px;
     width: 100%;
-    
+
 }
 
 .container_img_serv {
@@ -802,6 +819,7 @@ container__services {
 
 
 
+
 }
 
 .about_company {
@@ -820,6 +838,8 @@ container__services {
 .text_about-company {
     width: 100%;
     padding-right: 140px;
+    animation: fadeInLeft;
+    animation-duration: 2s;
 }
 
 .text_about-company h2 {
@@ -847,6 +867,8 @@ container__services {
 /* CONTENEDOR DE IMAGEN*/
 .img_about-company {
     width: 100%;
+    animation: fadeInRight;
+    animation-duration: 2s;
 
 }
 
@@ -995,6 +1017,8 @@ footer {
     justify-content: center;
     color: white;
     text-align: center;
+    animation: fadeInDown;
+    animation-duration: 2s;
 
 }
 
@@ -1063,7 +1087,11 @@ footer {
 
 /*  ESTILOS GENERALES CARDS PILARES */
 
-.container__card-factores {}
+.container__card-factores {
+    animation: fadeInDown;
+    animation-duration: 2s;
+
+}
 
 
 .card__primary {
@@ -1092,6 +1120,7 @@ footer {
     color: var(--color_text-tertiary);
 }
 
+.text__card-primary h2:hover {}
 
 
 
@@ -1390,7 +1419,8 @@ form>button:hover {
     justify-content: center;
     color: white;
     text-align: center;
-
+    animation: fadeInDown;
+    animation-duration: 2s;
 }
 
 .container__portafolio-primary {
@@ -1399,6 +1429,7 @@ form>button:hover {
     width: 1200px;
     height: 50vh;
     margin: auto;
+
 
 
 }
@@ -1448,6 +1479,8 @@ form>button:hover {
 
 .container__image {
     padding-top: 50px;
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
 
 /* Animación de entrada */
@@ -1571,6 +1604,9 @@ form>button:hover {
     text-align: center;
     margin-bottom: 40px;
     padding-top: 30px;
+    animation: bounce;
+    animation-delay: 2s;
+    animation-duration: 1s;
 }
 
 .categorias .button {
@@ -1609,6 +1645,8 @@ form>button:hover {
     gap: 20px;
     padding-bottom: 50px;
     width: 100%;
+
+
 }
 
 /*TAMAÑO DE LA CARD */
@@ -1625,7 +1663,7 @@ form>button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 300ms;
     border: 0.3px solid #cfcdcd;
-    
+
 
 
 
@@ -1811,9 +1849,16 @@ select {
 }
 
 /* Section Title */
+.sectioncontact {
+    animation: fadeInUp;
+    
+    animation-duration: 1.8s;
+}
+
 .container_datos-empresa {
     text-align: center;
     margin: 20px 0;
+
 }
 
 .titulo_contactanos {
@@ -1923,33 +1968,38 @@ select {
     color: #666;
 }
 
-.btncotizar{
+.btncotizar {
     display: flex;
     align-items: center;
     align-content: center;
     margin: auto;
 }
+
 /* Responsividad */
-.menuMaster{
+.menuMaster {
     display: flex;
     margin: auto;
     align-items: center;
     align-content: center;
 }
+
 /* Animacion entrada menu*/
 @keyframes EntrarDesdeArriba {
-    from{
+    from {
         transform: translateY(-200%);
     }
-    to{
+
+    to {
         transform: translateY(0%);
     }
 }
+
 @keyframes EntrarDesdeArriba2 {
-    from{
+    from {
         transform: translateY(-620%);
     }
-    to{
+
+    to {
         transform: translateY(0%);
     }
 }
@@ -1958,28 +2008,31 @@ select {
     from {
         transform: translateY(0%);
     }
+
     to {
-        transform: translateY(200%); 
+        transform: translateY(200%);
     }
 }
 
 @media (max-width: 768px) {
-    nav{
+    nav {
         justify-content: space-between;
     }
-    .nav-links{
+
+    .nav-links {
         padding-top: 20px;
         display: none;
         position: absolute;
-        top:100%;
+        top: 100%;
         right: 0;
         background-color: var(--background-color);
         width: 100%;
         flex-direction: column;
         text-align: center;
-    
+
     }
-    .btncotizar{
+
+    .btncotizar {
         display: none;
         position: absolute;
         top: 620%;
@@ -1992,14 +2045,18 @@ select {
         row-gap: 20px;
         padding-bottom: 20px;
     }
-    .nav-links li{
+
+    .nav-links li {
         margin: 15px 0px;
 
     }
-    .hamburguer{
+
+    .hamburguer {
         display: flex;
     }
-    .nav-links.show,.btncotizar.show{
+
+    .nav-links.show,
+    .btncotizar.show {
         display: flex;
         background-color: var(--white);
     }
@@ -2015,6 +2072,7 @@ select {
         padding-right: 0px;
         padding-top: 20px;
         padding-bottom: 0px;
+
     }
 
     .text__cover h1 {
@@ -2030,9 +2088,11 @@ select {
         width: 100%;
 
     }
-    .box__tecnologias{
+
+    .box__tecnologias {
         width: 80%;
     }
+
     .img_tecnologia {
         margin: 0px 10px;
     }
@@ -2043,8 +2103,8 @@ select {
         animation: fadeInDown;
         animation-duration: 3s;
     }
- 
-   
+
+
     .text__especialidad {
         display: flex;
         flex-direction: column;
@@ -2085,14 +2145,15 @@ select {
         align-items: center;
     }
 
-    .image__especialidad{
+    .image__especialidad {
         margin: auto;
     }
+
     .image__especialidad img {
         width: 200px;
         height: auto;
         padding-bottom: 20px;
-        
+
     }
 
     .box__card-Horizontal {
@@ -2243,6 +2304,8 @@ select {
 
     .container__sobreNosotros h1 {
         font-size: 40px;
+        animation: fadeInLeft;
+        animation-duration: 3s;
     }
 
     .container__sobreNosotros p {
@@ -2254,15 +2317,18 @@ select {
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
+
     }
 
     .text_about-company {
         width: 100%;
         padding-right: 0px;
+
     }
 
     .img_aboutcompany-rigth {
         border-radius: 10px;
+
     }
 
     .img_about-company img {
@@ -2357,21 +2423,23 @@ select {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    nav{
+    nav {
         justify-content: space-between;
     }
-    .nav-links{
+
+    .nav-links {
         padding-top: 20px;
         display: none;
         position: absolute;
-        top:100%;
+        top: 100%;
         right: 0;
         background-color: var(--background-color);
         width: 100%;
         flex-direction: column;
         text-align: center;
     }
-    .btncotizar{
+
+    .btncotizar {
         display: none;
         position: absolute;
         top: 620%;
@@ -2384,23 +2452,28 @@ select {
         row-gap: 20px;
         padding-bottom: 20px;
     }
-    .nav-links li{
+
+    .nav-links li {
         margin: 15px 0px;
 
     }
-    .hamburguer{
+
+    .hamburguer {
         display: flex;
     }
-    .nav-links.show{
+
+    .nav-links.show {
         display: flex;
         background-color: var(--white);
         animation: EntrarDesdeArriba .8s ease;
     }
-    .btncotizar.show{
+
+    .btncotizar.show {
         display: flex;
         background-color: var(--white);
         animation: EntrarDesdeArriba2 .8s ease;
     }
+
     .cover {
         display: flex;
         flex-direction: column;
@@ -2551,30 +2624,34 @@ select {
         gap: 0px;
     }
 
-    .card_miembrosEquipo h2{ 
+    .card_miembrosEquipo h2 {
         font-size: 45px;
 
     }
+
     .box__card-primaryFactory {
         width: 350px;
     }
+
     .text_about-company {
         padding-right: 0px;
     }
-    
-    .text_about-company p{
+
+    .text_about-company p {
         width: 100%;
         font-size: 20px;
         text-align: justify;
         padding: 0px 10px;
     }
-    .card_miembrosEquipo p{
+
+    .card_miembrosEquipo p {
         font-size: 20px;
         width: 90%;
     }
+
     .card_empleados {
         display: flex;
-        
+
 
     }
 
@@ -2591,29 +2668,37 @@ select {
         transition: all 300ms;
 
     }
-    .card__trabajador h3{
+
+    .card__trabajador h3 {
         font-size: 40px;
     }
-    .card__trabajador h6{
+
+    .card__trabajador h6 {
         font-size: 20px;
     }
-    .card__trabajador p{
+
+    .card__trabajador p {
         font-size: 30px;
     }
-    .card__trabajador a{
+
+    .card__trabajador a {
         width: 100%;
 
     }
-    .card__trabajador img{
+
+    .card__trabajador img {
         width: 200px;
     }
-    .input-box>input, .input-box>textarea {
+
+    .input-box>input,
+    .input-box>textarea {
         font-size: 18px;
     }
-    .image__about{
-        width:400px;
+
+    .image__about {
+        width: 400px;
         align-items: center;
         align-content: center;
-        object-fit:cover;
+        object-fit: cover;
     }
 }
