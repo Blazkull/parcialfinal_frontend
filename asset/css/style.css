@@ -2015,6 +2015,10 @@ select {
 }
 
 @media (max-width: 768px) {
+    .container__especialidad{
+        animation: fadeInUp;
+        animation-duration: 2s;
+    }
     nav {
         justify-content: space-between;
     }
@@ -2423,6 +2427,10 @@ select {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .container__especialidad{
+        animation: fadeInUp;
+        animation-duration: 2s;
+    }
     nav {
         justify-content: space-between;
     }
