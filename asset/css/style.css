@@ -2040,7 +2040,10 @@ select {
     .container__especialidad {
         max-width: 100%;
         padding-top: 30px;
+        animation: fadeInDown;
+        animation-duration: 3s;
     }
+ 
    
     .text__especialidad {
         display: flex;
