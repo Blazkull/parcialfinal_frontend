@@ -1,9 +1,15 @@
-// menu hamburguesa
 
-document.querySelectorAll(".menu .ul_links .il_links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    document.getElementById("menu_burger").checked = false;
-  });
+
+// menu hamburguesa update
+const hamburguesa=document.querySelector("#hamburguer")
+const enlaces= document.querySelector("#nav-links")
+const btncotizar= document.querySelector("#btncotizar")
+
+hamburguesa.addEventListener("click", () => {
+  enlaces.classList.toggle("show")
+});
+hamburguesa.addEventListener("click", () => {
+  btncotizar.classList.toggle("show")
 });
 
 // menu filtro categorias

@@ -38,18 +38,18 @@
     /* quitar el estilo a los textos*/
     font-family: "Space Grotesk", serif;
     /* llamado de fuente al estilo */
+    
 }
 
 header {
     width: 100%;
     height: auto;
-    position: fixed;
     /*para que se coloque encima de todo*/
     z-index: 100;
     /* asegurar que quede por arriba */
     padding-top: 0px;
     background-color: var(--background-color);
-
+    position: relative;
 
 }
 
@@ -87,34 +87,47 @@ header {
 .menu {
     display: flex;
     align-items: center;
+    margin: 20px 0px;
+    gap: 20px;
 
 }
 
 .menu nav {
-    margin: 0px 20px;
-}
-
-.menu nav ul {
     display: flex;
-    /* alinear horizontalmente*/
+    justify-content: space-around;
+    align-items: center;
 }
 
-.menu nav ul li {
+.nav-links{
     list-style: none;
-    /* quitar puntos*/
-    margin: 20px 16px;
+    display: flex;
+    gap: 25px;
 }
-
-.menu nav ul li a {
+.nav-links li{
     color: var(--main_color-back);
-    font-size: var(--lowText_font_size);
-    position: relative;
 }
 
-.menu nav ul li a:hover {
-    color: var(--color_text-resaltado);
+.nav-links a{
+    text-decoration: none;
+    color: var(--main_color-back);
+    font-size: 18px;
     font-weight: 600;
+}
 
+.nav-links a:hover{
+   color:var(--sulu) ;
+}
+.hamburguer{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color:var(--main_color-back);
+    margin: 4px 0px;
+    transition: 0.3s;
 }
 
 /* boton */
@@ -1887,10 +1900,85 @@ select {
     color: #666;
 }
 
+.btncotizar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
 /* Responsividad */
+.menuMaster{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+/* Animacion entrada menu*/
+@keyframes EntrarDesdeArriba {
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes EntrarDesdeArriba2 {
+    from{
+        transform: translateY(-620%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes SalidaDesdeAbajo {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(200%); 
+    }
+}
+
 @media (max-width: 768px) {
-    .socialMedia,.btn__quote{
+    nav{
+        justify-content: space-between;
+    }
+    .nav-links{
+        padding-top: 20px;
         display: none;
+        position: absolute;
+        top:100%;
+        right: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    .btncotizar{
+        display: none;
+        position: absolute;
+        top: 620%;
+        right: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+    .nav-links li{
+        margin: 15px 0px;
+
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .nav-links.show,.btncotizar.show{
+        display: flex;
+        background-color: var(--white);
     }
 
     .cover {
@@ -2243,6 +2331,50 @@ select {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    nav{
+        justify-content: space-between;
+    }
+    .nav-links{
+        padding-top: 20px;
+        display: none;
+        position: absolute;
+        top:100%;
+        right: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btncotizar{
+        display: none;
+        position: absolute;
+        top: 620%;
+        right: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+    .nav-links li{
+        margin: 15px 0px;
+
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .nav-links.show{
+        display: flex;
+        background-color: var(--white);
+        animation: EntrarDesdeArriba .8s ease;
+    }
+    .btncotizar.show{
+        display: flex;
+        background-color: var(--white);
+        animation: EntrarDesdeArriba2 .8s ease;
+    }
     .cover {
         display: flex;
         flex-direction: column;
