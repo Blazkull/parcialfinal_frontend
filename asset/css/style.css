@@ -117,6 +117,9 @@ header {
 .nav-links a:hover{
    color:var(--sulu) ;
 }
+.nav-links a:active{
+    color:var(--sulu) ;
+ }
 .hamburguer{
     display: none;
     flex-direction: column;
@@ -803,7 +806,7 @@ container__services {
 }
 
 .text_about-company h2 {
-    font-size: 50px;
+    font-size: 45px;
     color: var(--color_text-tertiary);
 }
 
