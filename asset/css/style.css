@@ -188,8 +188,15 @@ header {
     /*centrar contenido */
     padding: 0px 20px;
     /* mantener la misma medida 0px ariiba y abajo y 20 derecha e izquierda*/
+    animation: fadeIn; 
+    animation-delay: 0.100s;
+    animation-duration: 0.8s;
 }
 
+.container__cover {
+    animation: fadeInDown; 
+    animation-duration: 1s;
+}
 .text__cover {
     width: 100%;
     padding-right: 150px;
@@ -197,7 +204,8 @@ header {
 
 .text__cover h1 {
     font-size: 80px;
-    color: var(--color_text-secundary)
+    color: var(--color_text-secundary);
+    
 }
 
 .text__cover p {
@@ -238,6 +246,9 @@ header {
 
 .img_tecnologia {
     border-radius: 30px;
+    animation: fadeIn; 
+    animation-duration: 3s;
+   
 
 }
 
@@ -282,10 +293,12 @@ header {
 /* CONTENEDOR DE IMAGEN*/
 .image__cover {
     width: 100%;
+    
 }
 
 .image__cover img {
     width: 550px;
+
 }
 
 /*  ESTILOS GENERALES CARDS*/
@@ -337,6 +350,10 @@ header {
 
 /*TAMAÑO DE LA CARD */
 
+.tituloanimation{
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
 .box__card-primary_text__service img {
     position: absolute;
     top: 0;
@@ -2001,7 +2018,7 @@ select {
     }
 
     .text__cover h1 {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .text__cover p {
