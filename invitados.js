@@ -1,5 +1,11 @@
 const invitados = [
 	{
+		nombre: "Jhoan Acosta",
+		eventos: 3,
+		confirmado: false,
+		acompanantes: ["Tatiana Peñate"],
+	},
+	{
 		nombre: "Guillermo Correa",
 		eventos: 3,
 		confirmado: false,
